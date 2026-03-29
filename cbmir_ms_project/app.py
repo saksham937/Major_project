@@ -262,8 +262,12 @@ if page == "🔍 CBMIR Retrieval System":
             for i, res in enumerate(results):
                 with cols[i % 5]:
                     st.markdown(f"<div class='rank-badge'>Rank {i+1}</div>", unsafe_allow_html=True)
-                    if os.path.exists(res['path']):
-                        st.image(res['path'], use_container_width=True)
+                    # Reconstruct path dynamically to handle cross-system deployment
+                    file_name = os.path.basename(res['path'])
+                    local_img_path = os.path.join(os.path.dirname(__file__), 'data', 'processed', 'extracted_slices', file_name)
+                    
+                    if os.path.exists(local_img_path):
+                        st.image(local_img_path, use_container_width=True)
                     else:
                         st.warning("Img Offline")
                         
