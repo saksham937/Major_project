@@ -24,31 +24,45 @@ st.set_page_config(
 # Custom Styling for Medical Interface
 st.markdown("""
 <style>
-    .stApp {background-color: #f4f6f9; color: #1a202c;}
-    h1, h2, h3, h4 {color: #2b6cb0;}
-    .reportview-container {background: #f4f6f9;}
-    .sidebar .sidebar-content {background-image: linear-gradient(#2b6cb0,#2c5282); color: white;}
-    
+    /* Support both light and dark modes via Streamlit CSS variables */
     .metric-card {
-        background-color: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        background-color: var(--secondary-background-color);
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 10px;
+        padding: 24px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         text-align: center;
+        transition: transform 0.2s;
     }
-    .risk-high { color: #e53e3e; font-weight: bold; font-size: 1.5rem; }
-    .risk-medium { color: #dd6b20; font-weight: bold; font-size: 1.5rem; }
-    .risk-low { color: #38a169; font-weight: bold; font-size: 1.5rem; }
+    .metric-card:hover {
+        transform: translateY(-2px);
+    }
+    
+    .risk-high { color: #ef4444; font-weight: bold; font-size: 1.8rem; }
+    .risk-medium { color: #f97316; font-weight: bold; font-size: 1.8rem; }
+    .risk-low { color: #22c55e; font-weight: bold; font-size: 1.8rem; }
     
     .rank-badge {
-        background-color: #2b6cb0;
+        background-color: #3b82f6;
         color: white;
-        padding: 6px 12px;
+        padding: 6px 14px;
         border-radius: 9999px;
         font-weight: bold;
         display: inline-block;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    /* Login Page Enhancements */
+    .login-header {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .login-icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -58,23 +72,27 @@ if 'logged_in' not in st.session_state:
     st.session_state['logged_in'] = False
 
 def login_page():
-    st.title("⚕️ CBMIR Hospital Portal")
-    st.markdown("Please log in to access the Content-Based Medical Image Retrieval System.")
+    # Make header elements centered and clean
+    st.markdown("<h1 style='text-align: center; margin-bottom: 0;'>⚕️ CBMIR Hospital Portal</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; margin-bottom: 2rem; color: var(--text-color); opacity: 0.8;'>Please log in to access the Content-Based Medical Image Retrieval System.</p>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 1.5, 1])
     with col2:
-        st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
-        st.subheader("Secure Login")
-        username = st.text_input("Doctor / Clinician ID")
-        password = st.text_input("Password", type="password")
-        
-        if st.button("Login", use_container_width=True):
-            if username and password:
-                st.session_state['logged_in'] = True
-                st.rerun()
-            else:
-                st.error("Please enter credentials.")
-        st.markdown("</div>", unsafe_allow_html=True)
+        # Use native Streamlit form which automatically provides a clean bordered container
+        with st.form("login_form"):
+            st.subheader("Secure Login")
+            username = st.text_input("Doctor / Clinician ID", placeholder="Enter your ID")
+            password = st.text_input("Password", type="password", placeholder="Enter your password")
+            
+            st.write("") # spacer
+            submit_button = st.form_submit_button("Authenticate & Login", use_container_width=True)
+            
+            if submit_button:
+                if username and password:
+                    st.session_state['logged_in'] = True
+                    st.rerun()
+                else:
+                    st.error("Please enter both ID and Password.")
 
 if not st.session_state['logged_in']:
     login_page()
