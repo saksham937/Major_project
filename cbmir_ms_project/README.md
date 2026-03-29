@@ -1,3 +1,6 @@
+#Deployed link
+https://saksham937-major-project-cbmir-ms-projectapp-mcgt9e.streamlit.app
+
 # Multiple Sclerosis Identification via CBMIR 🧠
 
 This project implements a complete end-to-end **Content-Based Medical Image Retrieval (CBMIR)** system designed to assist in identifying Multiple Sclerosis (MS) lesions. Given a query MRI brain scan, the system retrieves visually and pathologically similar cases from a database, aiding clinicians in diagnosis and analysis.
