@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Data:
+	MS Longitudinal Challenge Data Set
+
+	Image Analysis and Communications Lab (IACL)
+
+Version: 1.0 (2015-02-11)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Usage: 
+
+This MS Longitudinal Challenge Data Set (the Data) is intended for
+research and educational purposes only. You agree to use the Data
+according to the terms and conditions outlined in the Disclaimer and
+End User License Agreement (EULA). In brief, the Data has NOT been
+cleared by the Food and Drug Administration, and it may NOT be used
+for clinical or diagnostic purposes.
+
+The downloaded Data, including associated manual delineations, or any
+data derived from these data sets, may not be given or redistributed
+under any circumstances to persons not belonging to the registered
+team. 
+
+Downloaded Data may only be used for the purpose of preparing an entry
+to be submitted for the MS Longitudinal Challenge.
+
+If the results of algorithms in this challenge are to be used in
+scientific publications (journal publications, conference papers ,
+technical reports, presentations at conferences and meetings) you must
+make an appropriate citation (see below).
+
+Evaluation of the segmentation results will be made publicly available
+on the Challenge website and in subsequent publications. By submitting
+your results, you grant permission to publish our evaluation.
+Participating teams maintain full ownership and rights of their
+method. 
+
+Teams must notify the organizers of any publication that is (partly)
+based on the results data published as a direct by-product of the
+Data. This is for the organizers to maintain a list of publications
+associated with the challenge. 
+
+Johns Hopkins University (JHU) and Johns Hopkins Hospital (JHH) owns
+the entire rights, title, and interest in and to the Data.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Contributors:
+
+Dzung L. Pham, dzung.pham@nih.gov
+Peter A. Calabresi, calabresi@jhmi.edu
+Aaron Carass, aaron_carass@jhu.edu
+Jerry L. Prince, prince@jhu.edu
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Acknowledgment: 
+
+If you use this Data please acknowledge the following paper:
+A. Carass, S. Roy, A. Jog, J.L. Cuzzocreo, E. Magrath, A. Gherman, J.
+Button, J. Nguyen, F. Prados, C.H. Sudre, M.J. Cardoso, N. Cawley, O.
+Ciccarelli, C.A.M. Wheeler-Kingshott, S. Ourselin, L. Catanese, H.
+Deshpande, P. Maurel, O. Commowick, C. Barillot, X. Tomas-Fernandez,
+S.K. Warfield, S. Vaidya, A. Chunduru, R. Muthuganapathy, G.
+Krishnamurthi, A. Jesson, T. Arbel, O. Maier, H. Handels, L.O. Iheme,
+D. Unay, S. Jain, D.M. Sima, D. Smeets, M. Ghafoorian, B. Platel, A.
+Birenbaum, H. Greenspan, P.-L. Bazin, P.A. Calabresi, C.M.
+Crainiceanu, L.M. Ellingsen, D.S. Reich, J.L. Prince, and D.L. Pham,
+"Longitudinal Multiple Sclerosis Lesion Segmentation: Resource and
+Challenge", NeuroImage, 148(C):77-102, 2017.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+More information: 
+
+http://www.iacl.ece.jhu.edu/MSChallenge
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Copyright: 
+
+Copyright (c) 2015-2017 Johns Hopkins University and Johns Hopkins Hospital
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
